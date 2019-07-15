@@ -1,0 +1,15 @@
+- id: shellcheck
+  name: Run shellcheck
+  description: Lint shell scripts
+  entry: shellcheck
+  args: []
+  language: system
+  types: [shell]
+
+- id: shfmt
+  name: Run shfmt
+  description: Format shell scripts
+  entry: shfmt
+  args: ["-w", "-i", "2"]
+  language: system
+  types: [shell]
